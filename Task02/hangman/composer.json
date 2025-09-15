@@ -1,0 +1,18 @@
+{
+    "name": "olya2004/hangman",
+    "require": {
+        "wp-cli/php-cli-tools": "^0.12.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "olya2004\\hangman\\": "src/"
+        },
+        "files": [
+            "src/Controller.php",
+            "src/View.php"
+        ]
+    },
+    "bin": [
+        "bin/hangman"
+    ]
+}
