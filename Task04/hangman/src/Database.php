@@ -8,7 +8,7 @@ class Database
 
     public function __construct()
     {
-        $this->pdo = new \PDO("sqlite:bin/hangman.db");
+        $this->pdo = new \PDO("sqlite:" . __DIR__ . "/../bin/hangman.db");
         $this->createTables();
     }
 
